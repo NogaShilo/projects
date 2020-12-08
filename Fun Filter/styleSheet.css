@@ -1,0 +1,103 @@
+* { 
+  box-sizing: border-box;
+  font-family: Garamond (serif);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #E1E1E1;
+  background-image: url("http://vollnixx.files.wordpress.com/2013/12/clouds_real.jpg");
+  background-position: center bottom;
+  animation: animatedBackground 30s linear infinite;
+  /* Safari and Chrome: */
+  -webkit-animation: animatedBackground 30s linear infinite;
+
+}
+@keyframes animatedBackground 
+{
+  from { background-position: 0 100%; }
+  to { background-position: 100% 100%; }
+}
+
+
+h1 {
+  color: #6a5acd;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.3),2px 2px 0px rgba(0,0,0,0.3),3px 3px 0px rgba(0,0,0,0.3),4px 4px 0px rgba(0,0,0,0.3),5px 5px 0px rgba(0,0,0,0.3),6px 6px 0px rgba(0,0,0,0.3),7px 7px 0px rgba(0,0,0,0.3),8px 8px 0px rgba(0,0,0,0.3),9px 9px 0px rgba(0,0,0,0.3),10px 10px 0px rgba(0,0,0,0.3);
+  line-height: 1.5;  
+}
+
+h1:hover {
+  transition: font-size 2s ease-in;
+  font-size: 6em;
+}
+
+h3, h2 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+canvas {
+
+width: 70%;
+height: 40%;
+border: 1px solid;
+margin-right: 15%;
+margin-left: 15%;
+}
+input {
+  
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+
+}
+
+.button:onclick, .button:onfucus{
+  
+  
+  box-shadow: 3px 3px 3px #000000;
+  
+}
+
+.button:active {
+  
+   box-shadow: 8px 8px 8px #B4B4B4;
+}
+
+
+#rainbow {
+  background-image: linear-gradient(#ff0000, #ffa500,#3cb371,#0000ff);
+  width: 100px;
+}
+#gray {
+  background-image: linear-gradient(to right,#787878,#b4b4b4,#f0f0f0,#b4b4b4,#787878);
+  width: 100px;
+
+}
+#blur {
+  text-shadow: 4px 4px 2px #3c3c3c;
+  width: 100px;
+
+}
+#red {
+  background-image: radial-gradient(circle, #ff0000, #ff393a,#d50000,#ff393a);
+  width: 100px;
+
+}
+
+#purple {
+  background-image: radial-gradient(circle,#a463dd, #6a5acd,#5363dd, #a463dd);
+  width: 100px;
+}
+
+#reset {
+  width: 300px;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+
+}

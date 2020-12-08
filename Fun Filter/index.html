@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>Fun filter by Noga Shilo</title>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+	  <link rel="stylesheet" href="styleSheet.css">
+	  <script src="script.js"></script>
+</head>
+<body>
+
+
+<div class="container-fluid">
+  <div class = "text-center">
+    <h1>Filter Fun</h1>
+  </div>
+  <div class="container">
+    <canvas id="can">
+    </canvas>
+  </div>
+  <div class="container">
+    <h3>Load an image:</h3> 
+    
+    <input type="file" onchange="loadImage()" multiple="false" accept="image/*" id="fbutton" />
+    <div id="dims">
+    </div>
+  </div>
+
+ <div class = "container">
+   <h2>Choose Filter</h2>
+   <input type="button" id="rainbow" class="button" value="rainbow" onclick="rainbow()"/>
+   <input type="button" id="gray" class="button" value="grayscale" onclick="gray()"/>
+   <input type="button" id="blur" class="button" value="blur" onclick="doblur()"/>
+   <input type="button" id="red" class="button" value="red" onclick="red()"/>
+   <input type="button" id="purple" class="button" value="purple" onclick="purple()"/>
+   <input type="button" id="reset" class="button" value="reset image" onclick="reset()" />
+  
+  </div>
+ 
+ 
+    
+</div>   
+  
+</body>
+</html>
