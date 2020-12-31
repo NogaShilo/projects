@@ -23,6 +23,7 @@ var LoadContent = function(pageContentUrl){
   function (responseText) {
     insertHtml("#main-content",responseText);
     if (pageContentUrl==mainPageUrl){
+      LoadTxtwrite();
       $('#myCarousel').carousel({interval:3000});
     }
   },
@@ -71,7 +72,7 @@ TxtRotate.prototype.tick = function() {
   }, delta);
 };
 
-window.onload = function() {
+var LoadTxtwrite = function() {
   var elements = document.getElementsByClassName('txt-rotate');
   for (var i=0; i<elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-rotate');
