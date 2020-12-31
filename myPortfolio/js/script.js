@@ -22,6 +22,9 @@ var LoadContent = function(pageContentUrl){
   pageContentUrl,
   function (responseText) {
     insertHtml("#main-content",responseText);
+    if (pageContentUrl==mainPageUrl){
+      $('#myCarousel').carousel({interval:3000});
+    }
   },
   false);
 }
@@ -89,7 +92,7 @@ window.onload = function() {
 document.addEventListener("DOMContentLoaded", function (event) {
 // On first load, show home view
   LoadContent(mainPageUrl);
-  $('#myCarousel').carousel({interval:3000})
+  
 });
 
 
