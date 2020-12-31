@@ -25,13 +25,6 @@ var LoadContent = function(pageContentUrl){
   },
   false);
 }
-
-// On page load (before images or CSS)
-document.addEventListener("DOMContentLoaded", function (event) {
-// On first load, show home view
-  LoadContent(mainPageUrl);
-});
-
 //typingcrousel
 
 var TxtRotate = function(el, toRotate, period) {
@@ -90,7 +83,14 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
-
-$('#myCarousel').carousel({interval:3000})
 //typingcrousel end
+
+// On page load (before images or CSS)
+document.addEventListener("DOMContentLoaded", function (event) {
+// On first load, show home view
+  LoadContent(mainPageUrl);
+  $('#myCarousel').carousel({interval:3000})
+});
+
+
 
