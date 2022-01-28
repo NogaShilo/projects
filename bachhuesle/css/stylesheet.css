@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f4f5;
+}
+
+/* menubar */
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #7d7d80;
+}
+
+.nav-link:hover, .nav-link:focus{
+    color: #d7001e;
+}
+
+.dropdown-item {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    color: #d7001e;
+}
